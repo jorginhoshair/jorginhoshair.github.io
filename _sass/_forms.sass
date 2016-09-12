@@ -1,0 +1,87 @@
+
+%form-basis
+	padding: .5em 0
+	font-size: $base-font-size
+	border-width: 0 0 2px
+	border-style: none none solid
+	border-color: transparent transparent rgba($grey-color, .3)
+	background-color: transparent
+	color: inherit
+	transition: .5s ease-in-out
+	&:focus
+		border-bottom-color: $brand-color
+		outline: none
+
+fieldset
+	-webkit-margin-start: 0
+	-webkit-margin-end: 0
+	-webkit-padding-before: 0
+	-webkit-padding-start: 0
+	-webkit-padding-end: 0
+	-webkit-padding-after: 0
+
+	padding: 0 0 $spacing-unit
+	border: none
+
+label
+	display: inline-block
+	width: 10em
+	font-size: .75em
+	text-transform: uppercase
+	line-height: 1
+
+input
+	&[type='text'], 
+	&[type='password'], 
+	&[type='search'], 
+	&[type='tel'], 
+	&[type='url'], 
+	&[type='email'], 
+	&[type='datetime'], 
+	&[type='date'], 
+	&[type='time'], 
+	&[type='month'], 
+	&[type='week'], 
+	&[type='datetime-local'], 
+	&[type='number'], 
+	&[type='range']
+		@extend %form-basis
+		width: 100%
+
+textarea
+	@extend %form-basis
+	font-family: $base-font-family
+	width: 100%
+
+::-webkit-input-placeholder
+	color: $grey-color
+	opacity: 1
+\:-moz-placeholder
+	color: $grey-color
+	opacity: 1
+::-moz-placeholder
+	color: $grey-color
+	opacity: 1
+\:-ms-input-placeholder
+	color: $grey-color
+	opacity: 1
+\:focus::-webkit-input-placeholder
+	-webkit-transition: opacity 0.5s 0.5s ease-in-out
+	transition: opacity 0.5s 0.5s ease-in-out
+	opacity: 0
+
+
+footer
+	padding-bottom: $spacing-unit
+
+button
+	@extend %form-basis
+	padding-left: 1em
+	padding-right: 1em
+	text-align: center
+	width: 100%
+	text-transform: uppercase
+	font-weight: bold
+	background-color: $brand-color
+	color: $grey-color-dark
+	line-height: $base-line-height

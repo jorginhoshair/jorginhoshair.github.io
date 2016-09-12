@@ -1,38 +1,39 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
+  <div data-grid="center spacing" class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+    <div data-cell="1of3" class="page-excerpt">
+      <h2 class="page-title">{{ site.title }}</h2>
+      <p><a href="https://www.facebook.com/Jorjinhos-Hair-Style-326210300742861/" target="_blank">Fan page Jorginho's Hair Style</a></p>
+      <p>{{ site.description }}</p>
     </div>
+    <form method="post" action="" data-cell="1of3" class="page-excerpt">
+      <h2>Contato</h2>
+      <div data-grid="spacing">
+        <p>
+          <label for="nome">Nome *</label>
+          <input type="text" name="nome" placeholder="Digite seu nome" required>
+        </p>
+        <p>
+          <label for="tel">Telefone *</label>
+          <input type="tel" name="tel" placeholder="DDD + Seu número" required>
+        </p>
+      </div>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="nome@dominio.com.br">
+      </p>
+      <p>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" cols="30" rows="4" placeholder="Digite sua mensagem"></textarea>
+      </p>
+      <p><small>* Preenchimento necessário</small></p>
+      <p><button>Enviar</button></p>
+    </form>
 
   </div>
 
 </footer>
+
+<script src="{{ '/js/scroll.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>

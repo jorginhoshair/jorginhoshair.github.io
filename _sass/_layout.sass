@@ -1,0 +1,100 @@
+%negativo
+    background-color: $grey-color-dark
+    color: #fff
+    a
+        color: $brand-color
+
+.site-header
+    @extend %negativo
+    min-height: 56px
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 999
+    padding: $spacing-unit / 4 0
+
+.site-title
+    margin: 0
+    float: left
+
+.site-nav
+    float: right
+    line-height: 56px
+    font:
+        family: $base-title-family
+        size: $small-font-size
+    text-transform: uppercase
+    .menu-icon
+        display: none
+    .page-link
+        color: inherit
+        line-height: $base-line-height
+        margin-left: 20px
+    +media-query($on-laptop)
+        position: absolute
+        top: 2px
+        right: 2px
+        text-align: right
+        .menu-icon
+            display: block
+            float: right
+            width: 56px
+            height: 56px
+            text-align: center
+            > svg
+                width: 21px
+                height: 55px
+                path
+                    fill: #fff
+        .trigger
+            clear: both
+            display: none
+        &:hover .trigger
+            display: block
+            width: 100%
+            padding-bottom: 5px
+            background-color: $background-color
+            box-shadow: -3px 3px 10px 0 $grey-color
+        .page-link
+            display: block
+            padding: 15px
+            color: $text-color
+
+.site-footer
+    @extend %negativo
+    padding: $spacing-unit 0
+
+.page-content
+    padding: $spacing-unit 0
+
+.page-title
+    font:
+        family: $page-title-family
+        size: 40px
+
+.page-excerpt
+    +media-greater($on-palm)
+        padding: $spacing-unit * 2
+        p, li
+            max-width: 42em
+            margin-left: auto
+            margin-right: auto
+
+.section-home
+    height: 600px
+    padding-top: $spacing-unit * 3
+    +bg-img('https://c1.staticflickr.com/9/8274/29343041190_cd65a39094_o.jpg')
+.section-salao
+    background-color: $grey-color-light
+    .salao-figure
+        +bg-img('https://c1.staticflickr.com/9/8286/29343041290_6e5c3e9ce6_o.jpg')
+.section-servicos
+    .servicos-figure
+        +bg-img('https://c1.staticflickr.com/9/8023/29343041450_b5ff4af0c2_o.jpg')
+.section-noivas
+    @extend %negativo
+    .noivas-gallery
+        padding: 0 $spacing-unit
+.section-localizacao
+    //
