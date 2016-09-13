@@ -7,15 +7,41 @@ sections:
     href : "#salao"
   - title: Serviços
     href : "#servicos"
-  - title: Especial Noivas
+  - title: Profissionais
+    href : "#profissionais"
+  - title: Noivas
     href : "#noivas"
   - title: Localização
     href : "#localizacao"
+pros:
+  - name    : Mônica
+    position: Hair stylist
+    img     : /img/pro/monica.jpg
+  - name    : Rafael
+    position: Dia da noiva man
+    img     : /img/pro/rafael.jpg
+  - name    : Reinaldo
+    position: Hair for men
+    img     : /img/pro/reinaldo.jpg
+  - name    : Josefa
+    position: Estilista e decoradora
+    img     : /img/pro/josefa.jpg
+  - name    : Mariana
+    position: Hair stylist
+    img     : /img/pro/mariana.jpg
+  - name    : Melissa
+    position: Nail stylist
+    img     : /img/pro/melissa.jpg
+  - name    : Jorginho
+    position: Faz-tudo
+    img     : /img/pro/jorginho.jpg
 ---
 
 <section class="page-content section-home" id="home">
-  <div class="wrapper">
-    <h2 class="page-title">Bem-vindo!</h2>
+  <div class="home-title">
+    <img src="{{ '/img/Logo-Jorginho.png' | prepend: site.baseurl }}" alt="Logomarca Jorginho’s Hair">
+    <p>Av. Caribe, 454 – Jd. América, Sorocaba – SP</p>
+    <p>(15) 3211-2041 / (15) 3234-6808</p>
   </div>
 </section>
 
@@ -68,6 +94,25 @@ sections:
       <p>Hidratação de pé e mão, podologia especializada</p>
     </div>
 
+  </div>
+</section>
+
+<section class="page-content section-profissionais" id="profissionais">
+  <div class="page-excerpt">
+    <h2 class="page-title">Nossos profissionais</h2>
+    <div data-grid="center around spacing row wrap">
+    {% for person in page.pros %}
+      <div data-cell="shrink" class="pro-pic">
+        <figure>
+          <div class="circ"><img src="{{ person.img }}" alt="foto de {{ person.name }}"></div>
+          <figcaption>
+            <p class="pro-name">{{ person.name }}</p>
+            <p class="pro-position">{{ person.position }}</p>
+          </figcaption>
+        </figure>
+      </div>
+    {% endfor %}
+    </div>
   </div>
 </section>
 

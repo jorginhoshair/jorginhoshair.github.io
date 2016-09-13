@@ -12,7 +12,7 @@
     left: 0
     right: 0
     z-index: 999
-    padding: $spacing-unit / 4 0
+    padding: ($spacing-unit / 4) 0
 
 .site-title
     margin: 0
@@ -55,7 +55,7 @@
             width: 100%
             padding-bottom: 5px
             background-color: $background-color
-            box-shadow: -3px 3px 10px 0 $grey-color
+            box-shadow: (-3px) 3px 10px 0 $grey-color
         .page-link
             display: block
             padding: 15px
@@ -74,6 +74,7 @@
         size: 40px
 
 .page-excerpt
+    padding: $spacing-unit / 2
     +media-greater($on-palm)
         padding: $spacing-unit * 2
         p, li
@@ -82,19 +83,46 @@
             margin-right: auto
 
 .section-home
-    height: 600px
     padding-top: $spacing-unit * 3
-    +bg-img('https://c1.staticflickr.com/9/8274/29343041190_cd65a39094_o.jpg')
+    +bg-img("https://c1.staticflickr.com/9/8274/29343041190_cd65a39094_o.jpg")
+    .home-title
+        width: $on-laptop
+        max-width: 70%
+        margin: 150px auto
+        padding: 50px 0
+        text-align: center
+        background-color: rgba($grey-color-dark, 0.7)
+        color: #fff
+
 .section-salao
     background-color: $grey-color-light
     .salao-figure
-        +bg-img('https://c1.staticflickr.com/9/8286/29343041290_6e5c3e9ce6_o.jpg')
+        +bg-img("https://c1.staticflickr.com/9/8286/29343041290_6e5c3e9ce6_o.jpg")
+    .page-excerpt
+        +media-query($on-palm)
+            padding-left: 0
+            padding-right: 0
+
 .section-servicos
     .servicos-figure
-        +bg-img('https://c1.staticflickr.com/9/8023/29343041450_b5ff4af0c2_o.jpg')
+        +bg-img("https://c1.staticflickr.com/9/8023/29343041450_b5ff4af0c2_o.jpg")
+
+.section-profissionais
+    background-color: $grey-color-light
+    .page-title, .pro-pic
+        text-align: center
+    .pro-name
+        font-weight: bold
+        font-size: $base-font-size
+    .pro-position
+        text-transform: uppercase
+
 .section-noivas
     @extend %negativo
     .noivas-gallery
         padding: 0 $spacing-unit
+        +media-query($on-palm)
+            padding: 0 $spacing-unit / 2
+
 .section-localizacao
     //
