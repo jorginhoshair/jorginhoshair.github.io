@@ -6,17 +6,19 @@
 
 .site-header
     @extend %negativo
-    min-height: 56px
     position: fixed
     top: 0
     left: 0
     right: 0
     z-index: 999
-    padding: ($spacing-unit / 4) 0
+    padding: 5px 0
 
 .site-title
     margin: 0
     float: left
+    +media-greater($on-palm)
+        img
+            width: 170px
 
 .site-nav
     float: right
