@@ -35,6 +35,23 @@ pros:
   - name    : Jorginho
     position: Faz-tudo
     img     : /img/pro/jorginho.jpg
+noivas-photos:
+  - "https://c1.staticflickr.com/9/8439/29009577693_9fc68b7aa0.jpg"
+  - "https://c1.staticflickr.com/9/8396/29522963422_3da9b6d42c.jpg"
+  - "https://c1.staticflickr.com/9/8413/29009577503_a4c4421c84.jpg"
+  - "https://c1.staticflickr.com/9/8397/29522963152_b52122308a.jpg"
+  - "https://c1.staticflickr.com/9/8249/29009577343_d1fd82553e.jpg"
+  - "https://c1.staticflickr.com/9/8320/29009577223_8954623a0e.jpg"
+  - "https://c1.staticflickr.com/9/8489/29009577143_b389d575d9.jpg"
+  - "https://c1.staticflickr.com/9/8240/29009577033_7c1b919e16.jpg"
+  - "https://c1.staticflickr.com/8/7771/29009576943_a3c95267d3.jpg"
+  - "https://c1.staticflickr.com/9/8450/29009576763_7b337eb9ae.jpg"
+  - "https://c1.staticflickr.com/9/8400/29009576713_3188b256fd.jpg"
+  - "https://c1.staticflickr.com/9/8330/29009576663_08bdc8601a.jpg"
+  - "https://c1.staticflickr.com/8/7684/29009576573_da18df863b.jpg"
+  - "https://c1.staticflickr.com/9/8236/29552720571_5d17d1d9a3.jpg"
+  - "https://c1.staticflickr.com/9/8452/29009576483_19aac018a8.jpg"
+  - "https://c1.staticflickr.com/9/8608/29552720461_e7f87a850e.jpg"
 ---
 
 <section class="page-content section-home" id="home">
@@ -119,62 +136,12 @@ pros:
 <section class="page-content section-noivas" id="noivas">
   <div class="wrapper">
     <h2 class="page-title">Especial Noivas</h2>
-    <!-- 
-    <div data-grid="spacing">
-      <article data-cell="1of3">
-        <h3>1° Opção</h3>
-        
-        <ul>
-          <li>Penteado</li>
-          <li>Maquiagem</li>
-          <li>Teste do cabelo</li>
-          <li>Lanche (cortesia)</li>
-        </ul>
-      </article>
-      
-      <article data-cell="1of3">
-        <h3>2° Opção</h3>
-        
-        <ul>
-          <li>Teste do cabelo</li>
-          <li>Teste de maquiagem</li>
-          <li>Penteado e Maquiagem do dia</li>
-          <li>Lanche (cortesia)</li>
-        </ul>
-      </article>
-      
-      <article data-cell="1of3">
-        <h3>3° Opção</h3>
-        
-        <ul>
-          <li>Teste do cabelo</li>
-          <li>Teste de maquiagem</li>
-          <li>Cabelo e Maquiagem do dia</li>
-          <li>Pé e mão</li>
-          <li>Massagem Relaxante</li>
-          <li>Lanche (cortesia)</li>
-        </ul>
-      </article>
-    </div>
-    -->
   </div>
 
-  <div data-grid="justify" class="noivas-gallery">
-    <div data-cell="shrink">
-      <img src="https://c1.staticflickr.com/9/8439/29009577693_9fc68b7aa0.jpg" alt="Noivas">
-    </div>
-    <div data-cell="shrink">
-      <img src="https://c1.staticflickr.com/9/8396/29522963422_3da9b6d42c.jpg" alt="Noivas">
-    </div>
-    <div data-cell="shrink">
-      <img src="https://c1.staticflickr.com/9/8397/29522963152_b52122308a.jpg" alt="Noivas">
-    </div>
-    <div data-cell="shrink">
-      <img src="https://c1.staticflickr.com/9/8452/29009576483_19aac018a8.jpg" alt="Noivas">
-    </div>
-    <div data-cell="shrink">
-      <img src="https://c1.staticflickr.com/9/8608/29552720461_e7f87a850e.jpg" alt="Noivas">
-    </div>
+  <div data-grid="center justify" class="noivas-gallery">
+    {% for pic in page.noivas-photos %}
+      <div data-cell="shrink" class="slider-item"><img src="{{ pic }}" alt=""></div>
+    {% endfor %}
   </div>
 </section>
 
