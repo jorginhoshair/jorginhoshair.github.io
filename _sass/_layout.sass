@@ -142,20 +142,24 @@
             display: none
             img
                 display: block
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
                 margin: auto
                 +media-query($on-palm)
                     max-height: 300px
             &.slider-current
                 display: block
+                z-index: 9
                 opacity: 1
                 transition-delay: .1s
             &.slider-prev
                 display: block
-                z-index: -1
                 transform: translate(-50%)
             &.slider-next
                 display: block
-                z-index: -1
                 transform: translate(50%)
         .slider-controls
             position: absolute
