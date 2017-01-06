@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6
     font-weight: $base-font-weight
     font-family: $base-title-family
 
+@for $i from 1 through 6
+    h#{$i}
+        font-size: 40px / ( $i * .5 )
+
 a
     color: desaturate($brand-color, 20%)
     text-decoration: none
