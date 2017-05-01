@@ -79,10 +79,11 @@
     padding: $spacing-unit / 2
     +media-greater($on-palm)
         padding: $spacing-unit * 2
-        p, li
-            max-width: 42em
-            margin-left: auto
-            margin-right: auto
+        >
+            h1, h2, h3, h4, h5, h6, p, ul, ol, article, .wrapper
+                max-width: 42em
+                margin-left: auto
+                margin-right: auto
 
 .section-home
     padding-top: $spacing-unit * 3
@@ -108,11 +109,29 @@
 .section-servicos
     .servicos-figure
         +bg-img("https://c1.staticflickr.com/9/8023/29343041450_b5ff4af0c2_o.jpg")
+    .servicos-item
+        margin-bottom: $spacing-unit
+        +media-greater($on-laptop)
+            display: inline-block
+            vertical-align: top
+            width: 45%
+            &:nth-child(even)
+                margin-right: 9%
+        .servicos-pic
+            margin-right: 10px
+        .servicos-title
+            margin-top: 0
+            line-height: 1
+            font-size: 20px
 
 .section-profissionais
     background-color: $grey-color-light
     .page-title, .pro-pic
         text-align: center
+    .pro-pic
+        margin: $spacing-unit / 2
+        +media-query($on-palm)
+            margin: $spacing-unit / 4
     .pro-name
         font-weight: bold
         font-size: $base-font-size

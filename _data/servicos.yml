@@ -1,0 +1,84 @@
+  - 
+    id: masculino
+    title: MASCULINO
+    description: Profissionais seguindo a tendência dos cortes, com estilos modernos e com looks mais despojados, barba alinhada, cabelos lisos ou iluminados.
+  -
+    id: micropigmentacao
+    title: MICROPIGMENTAÇÃO
+    description: Profissional apto em micropgmentação estética ou paramédica.
+  -
+    id: depilacao
+    title: DEPILAÇÃO
+    description: Lugar reservado e com temperatura ambiente, depilação de algas, espanhola, cera fria, depilação egípcia, coloração de sobrancelhas, banho de lua, depilação masculina, dermopuntura.
+  -
+    id: podologia
+    title: PODOLOGIA
+    description: Profissionais regulamentadas, no tratamento de unha encravada, remoção de calos e calosidades, auxílio no tratamento de micoses, fissuras, colocação de órtese, atendimento especial para pés diabéticos.
+  -
+    id: unhas-de-porcelana
+    title: UNHAS DE PORCELANA
+    description: Método mais tradicional entre as unhas postiças, sua extensão é esculpida trazendo um resultado de unhas bonitas e elegantes.
+  -
+    id: unhas-de-gel
+    title: UNHAS DE GEL
+    description: Técnica de alongamento duradouro, chegando ao comprimento desejado das mulheres com resultado natural.
+  -
+    id: nail-stylist
+    title: NAIL STYLIST
+    description: Profissionais aptas a dar acabamento perfeito e duradouro, utilizando produtos de alta qualidade.
+  -
+    id: airbrush
+    title: AIRBRUSH
+    description: No jorginho´s temos profissional capacitado com airbrush, trazendo maior durabilidade na pele, mantendo um aspecto natural.
+  -
+    id: coloracao-de-sobrancelhas
+    title: COLORAÇÃO DE SOBRANCELHAS
+    description: Técnica indicada para corrigir falhas, chegar até mesmo em um tom mais harmonioso com os cabelos.
+  -
+    id: design-de-sobrancelhas
+    title: DESIGN DE SOBRANCELHAS
+    description: Ajudando a valorizar o formato do rosto, deixando um visual harmonioso. além da técnica tradicional, que utiliza pinça, também é oferecida a egípcia, perfeita para remoção de pelos delicados no rosto.
+  -
+    id: make-up
+    title: MAKE-UP
+    description: Uma arte, utilizando toda sensibilidade e técnica, realçando os pontos positivos de nossas clientes, contando com os últimos lançamentos nacionais e importados.
+  -
+    id: lavagem
+    title: LAVAGEM
+    description: Usando o shampoo ideal para seu tipo de cabelo, massageando os fio e o couro cabeludo, deixando os fios fortes e saudáveis.
+  -
+    id: progressiva-e-definitiva
+    title: PROGRESSIVA E DEFINITIVA
+    description: Profissionais aptos a realizar esses procedimentos, reduzindo o volume, diminuindo o frizz e alisando permanentemente, sendo seu uso permitido pela anvisa.
+  -
+    id: alongamento-de-fios
+    title: ALONGAMENTO DE FIOS
+    description: As extensões podem ir além, com a criatividade de nossos profissionais você poderá ganhar também mais volume nas suas madeixas... tudo é possivel e prático.
+  -
+    id: penteados
+    title: PENTEADOS
+    description: Looks do básico ao ousado, profissionais criando para deixar as clientes deslumbrantes para qualquer ocasião.
+  -
+    id: escova
+    title: ESCOVA
+    description: Fazendo processo de secagem e modelagem dos fios, protegendo com termoativos os efeitos nocivos do ar quente.
+  -
+    id: luzes-reflexo-mechas-e-balaiagem
+    title: LUZES, REFLEXO, MECHAS E BALAIAGEM
+    description: Profissionais chegando ao tom certo para um resultado natural, leve e sofisticado, com técnicas adotadas para cada estilo de cabelo.
+  -
+    id: coloracao
+    title: COLORAÇÃO
+    description: Coloristas criando o look certo, para a tendência de cada estação, com nuances perfeitas trazendo o brilho para as madeixas de nossas clientes.
+  -
+    id: hidratacao
+    title: HIDRATAÇÃO
+    description: Repondo os nutrientes e garantindo os cabelos sedosos, bonitos e saudáveis e sem frizz,podendo optar por plástica capilar, perfeita para quem acabou de passar por processos químicos.
+  -
+    id: corte-bordado
+    title: CORTE BORDADO
+    description: Uma técnica perfeita para as mulheres que querem diminuir as pontas duplas sem perder o comprimento de suas madeixas.
+  -
+    id: corte
+    title: CORTE
+    description: Criando um visual personalizado, evidenciando a beleza das clientes, com cortes ideais para cada tipo de rosto, cabelo e estilo.
