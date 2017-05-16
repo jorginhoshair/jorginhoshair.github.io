@@ -10,7 +10,8 @@
     +media-query($on-palm)
         flex-direction: column
         > *
-            flex-basis: auto !important // IE bug #1
+            flex-basis: auto // IE bug #1
+            height: auto
             max-width: 100% // IE bug #2
 
 
@@ -57,23 +58,23 @@
     +module(cell)
 
         +variant(nospace)
-            margin-left: 0 !important
-            margin-right: 0 !important
+            margin-left: 0
+            margin-right: 0
         +variant(shrink)
             flex: 0 1 auto
 
         +variant(1of2)
-            flex-basis: 50%
+            flex-basis: 40%
         +variant(1of3)
-            flex-basis: 33.333%
+            flex-basis: 26%
         +variant(1of4)
-            flex-basis: 25%
+            flex-basis: 21%
         +variant(2of3)
-            flex-basis: 66.666%
+            flex-basis: 60%
 
         +media-query($on-palm)
-            margin-left: 0 !important
-            margin-right: 0 !important
+            margin-left: 0
+            margin-right: 0
 
             +variant(nospace)
                 margin-bottom: 0
@@ -91,6 +92,6 @@
                 width: 50%
 
                 &:nth-child(odd)
-                    margin-left: 0 !important
+                    margin-left: 0
                 &:nth-child(even)
-                    margin-right: 0 !important
+                    margin-right: 0

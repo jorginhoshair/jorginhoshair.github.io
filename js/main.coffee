@@ -81,28 +81,28 @@ Slider = (selector) ->
 			, 3000
 		Pause : () ->
 			clearInterval this.playId
+		RenderControls : (container) ->
+			controls = document.createElement 'div'
+			controls.className = 'slider-controls'
+			controls.innerHTML = '<a class="control icon prev" href="#"></a><a class="control icon next" href="">avançar</a>'
+			controlPrev = controls.querySelector '.control.prev'
+			controlNext = controls.querySelector '.control.next'
+			container.prependChild controls
+			controlPrev.innerHTML = '<svg version="1.1" viewBox="0 0 59.414 59.414" width="60" height="60"><polygon fill="#48A0DC" points="43.854,59.414 14.146,29.707 43.854,0 45.268,1.414 16.975,29.707 45.268,58 	"/></svg>'
+			controlPrev.addEventListener 'click', (e) ->
+				e.preventDefault()
+				slides.Prev()
+			controlNext.innerHTML = '<svg version="1.1" viewBox="0 0 59.414 59.414" width="60" height="60"><polygon fill="#48A0DC" points="15.561,59.414 14.146,58 42.439,29.707 14.146,1.414 15.561,0 45.268,29.707 	"/></svg>'
+			controlNext.addEventListener 'click', (e) ->
+				e.preventDefault()
+				slides.Next()
 
 	slider.compose()
-	slider.Play()
 	slider
 
 slides = Slider('.noivas-gallery .slider-item')
 slidesContainer = $('.noivas-gallery')[0]
-
-controls = document.createElement 'div'
-controls.className = 'slider-controls'
-controls.innerHTML = '<a class="control icon prev" href="#"></a><a class="control icon next" href="">avançar</a>'
-controlPrev = controls.querySelector '.control.prev'
-controlNext = controls.querySelector '.control.next'
-slidesContainer.prependChild controls
-
+slides.RenderControls slidesContainer
+slides.Play()
 slidesContainer.addEventListener 'mouseover', () -> slides.Pause()
 slidesContainer.addEventListener 'mouseout' , () -> slides.Play()
-controlPrev.innerHTML = '<svg version="1.1" viewBox="0 0 59.414 59.414" width="60" height="60"><polygon fill="#48A0DC" points="43.854,59.414 14.146,29.707 43.854,0 45.268,1.414 16.975,29.707 45.268,58 	"/></svg>'
-controlPrev.addEventListener 'click', (e) ->
-	e.preventDefault()
-	slides.Prev()
-controlNext.innerHTML = '<svg version="1.1" viewBox="0 0 59.414 59.414" width="60" height="60"><polygon fill="#48A0DC" points="15.561,59.414 14.146,58 42.439,29.707 14.146,1.414 15.561,0 45.268,29.707 	"/></svg>'
-controlNext.addEventListener 'click', (e) ->
-	e.preventDefault()
-	slides.Next()
