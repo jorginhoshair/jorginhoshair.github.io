@@ -5,12 +5,12 @@ sections:
     href : "#home"
   - title: O Salão
     href : "#salao"
+  - title: Noivas
+    href : "#noivas"
   - title: Serviços
     href : "#servicos"
   - title: Profissionais
     href : "#profissionais"
-  - title: Noivas
-    href : "#noivas"
   - title: Localização
     href : "#localizacao"
 pros:
@@ -73,6 +73,18 @@ noivas-photos:
       <p>O salão Jorginho’s Hair Style é sinônimo de beleza e elegância no mercado atual.</p>
     </div>
     <div data-cell="shrink"><img src="http://hair-beauty.cmsmasters.net/wp-content/uploads/2016/07/Untitled-1.png" alt="cliente"></div>
+  </div>
+</section>
+
+<section class="page-content section-noivas" id="noivas">
+  <div class="wrapper">
+    <h2 class="page-title">Especial Noivas</h2>
+  </div>
+
+  <div data-grid="center justify" class="noivas-gallery">
+    {% for pic in page.noivas-photos %}
+      <div data-cell="shrink" class="slider-item"><img src="{{ pic }}" alt=""></div>
+    {% endfor %}
   </div>
 </section>
 
@@ -172,18 +184,6 @@ noivas-photos:
       </div>
     {% endfor %}
     </div>
-  </div>
-</section>
-
-<section class="page-content section-noivas" id="noivas">
-  <div class="wrapper">
-    <h2 class="page-title">Especial Noivas</h2>
-  </div>
-
-  <div data-grid="center justify" class="noivas-gallery">
-    {% for pic in page.noivas-photos %}
-      <div data-cell="shrink" class="slider-item"><img src="{{ pic }}" alt=""></div>
-    {% endfor %}
   </div>
 </section>
 
