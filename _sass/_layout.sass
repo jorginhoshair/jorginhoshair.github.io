@@ -133,10 +133,8 @@
     .page-title, .pro-pic
         text-align: center
     .pro-pic
-        margin: $spacing-unit / 2
-        max-width: 240px
-        +media-query($on-palm)
-            margin: $spacing-unit / 4
+        +media-greater($on-palm)
+            max-width: 300px
     .pro-name
         font-weight: bold
         font-size: $base-font-size
