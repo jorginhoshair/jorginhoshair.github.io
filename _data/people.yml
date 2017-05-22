@@ -1,7 +1,7 @@
 -
   id: anderson-cabeleireiro-luzes-progressiva-cortes
   name: Anderson
-  position: Cabeleireiro Luzes, Progressiva e Cortes
+  position: Cabeleireiro, Colorista, Alisamentos
 -
   id: bete-freitas-manicure-e-pedicure
   name: Bete Freitas
@@ -13,7 +13,7 @@
 -
   id: dudu-alves-cabelereiro-colorista-progressivas
   name: Dudu Alves
-  position: Cabeleireiro, Colorista, Progressivas
+  position: Cabeleireiro, Colorista, Alisamentos
 -
   id: eleni-striquer-manicure-pedicure-unhas-em-gel
   name: Eleni Striquer
@@ -21,7 +21,7 @@
 -
   id: emerson-cabelereiro-maquiador-colorista-corte-progressiva
   name: Emerson
-  position: Cabeleireiro, Maquiador, Colorista, Corte, Progressiva
+  position: Cabeleireiro, Maquiador, Colorista, Alisamentos
 -
   id: erica-camargo-cabelereira-colorista
   name: Erica Camargo
@@ -29,11 +29,11 @@
 -
   id: etienne-cabeleireira-maquiadora-colorista
   name: Etienne
-  position: Cabeleireira, Maquiadora, Colorista
+  position: Cabeleireira, Maquiadora, Colorista, Alisamentos, Mega Hair
 -
   id: fabio-machado-cabeleireiro-maquiador-colorista-alisamento
   name: Fábio Machado
-  position: Cabelereiro, Maquiador, Colorista, Alisamento
+  position: Cabelereiro, Maquiador, Colorista, Alisamentos
 -
   id: gisele-cordeiro-auxiliar-de-cabeleireiros-hidratacoes
   name: Gisele Cordeiro
@@ -61,7 +61,7 @@
 -
   id: maicon-santos-cabeleireiro-maquiador-e-micropigmentador
   name: Maicon Santos
-  position: Cabelereireiro, Maquiador e Micropigmentador
+  position: Cabelereireiro, Maquiador, Micropigmentador
 -
   id: marcia-martins-auxiliar-de-cabeleireiros
   name: Marcia Martins
@@ -97,7 +97,7 @@
 -
   id: rodrigo-nunes-cabeleireiro-colorista-corte-e-progressivas
   name: Rodrigo Nunes
-  position: Cabeleireiro, Colorista, Corte e Progressivas
+  position: Cabeleireiro, Colorista, Alisamentos
 -
   id: rosinha-hair-cabeleireira-colorista
   name: Rosinha Hair
@@ -113,7 +113,7 @@
 -
   id: silvana-marques-auxiliar-de-cabeleireiros
   name: Silvana Marques
-  position: Auxiliar de Cabeleireiros
+  position: Auxiliar de Cabeleireiros, Hidratações
 -
   id: simone-bastos-manicure-pedicure-unhas-em-gel
   name: Simone Bastos
