@@ -87,7 +87,11 @@
 
 .section-home
     padding-top: $spacing-unit * 3
-    +bg-img("https://c1.staticflickr.com/3/2823/34227436602_a59fcb2964_o.jpg")
+    background:
+        image: url("https://c1.staticflickr.com/5/4162/34443046450_f5bfa9dcf3_o.jpg")
+        repeat: no-repeat
+        position: top
+        size: cover
     .home-title
         width: $on-laptop
         max-width: 70%
@@ -123,15 +127,15 @@
             margin-top: 0
             line-height: 1
             font-size: 20px
+            overflow: hidden
 
 .section-profissionais
     background-color: $grey-color-light
     .page-title, .pro-pic
         text-align: center
     .pro-pic
-        margin: $spacing-unit / 2
-        +media-query($on-palm)
-            margin: $spacing-unit / 4
+        +media-greater($on-palm)
+            max-width: 300px
     .pro-name
         font-weight: bold
         font-size: $base-font-size

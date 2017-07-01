@@ -5,12 +5,12 @@ sections:
     href : "#home"
   - title: O Salão
     href : "#salao"
+  - title: Noivas
+    href : "#noivas"
   - title: Serviços
     href : "#servicos"
   - title: Profissionais
     href : "#profissionais"
-  - title: Noivas
-    href : "#noivas"
   - title: Localização
     href : "#localizacao"
 ---
@@ -32,7 +32,19 @@ sections:
       <p>Além de seus serviços, o salão oferece às clientes boutique de roupas, acessórios, semijoias, perfumes, cosméticos e um aconchegante espaço gourmet.</p>
       <p>Hoje o salão Jorginho`s hair style, é sinônimo de beleza e elegância no mercado.</p>
     </div>
-    <div data-cell="shrink"><img src="{{ site.baseurl }}/img/salao-intro.png" alt="cliente"></div>
+    <div data-cell="shrink"><img src="https://c1.staticflickr.com/5/4185/34697289291_04b2c99f2a.jpg" alt="Noiva"></div>
+  </div>
+</section>
+
+<section class="page-content section-noivas" id="noivas">
+  <div class="wrapper">
+    <h2 class="page-title">Especial Noivas</h2>
+  </div>
+
+  <div data-grid="center justify" class="noivas-gallery">
+    {% for pic in site.data.noivas %}
+      <div data-cell="shrink" class="slider-item"><img src="https://c1.staticflickr.com/{{ pic.farm }}/{{ pic.server }}/{{ pic.id }}_{{ pic.secret }}.jpg" alt="Noiva"></div>
+    {% endfor %}
   </div>
 </section>
 
@@ -60,9 +72,9 @@ sections:
 <section class="page-content section-profissionais" id="profissionais">
   <div class="page-excerpt">
     <h2 class="page-title">Nossos profissionais</h2>
-    <div data-grid="around spacing row wrap">
+    <div data-grid="around wrap">
     {% for person in site.data.people %}
-      <figure data-cell="1of4 stretch" class="pro-pic">
+      <figure data-cell="1of4 stretch" class="wrapper pro-pic">
         <div class="circ"><img src="{{ site.baseurl }}/img/people/{{ person.id }}.jpg" alt="foto de {{ person.name }}"></div>
         <figcaption>
           <p class="pro-name">{{ person.name }}</p>
@@ -71,18 +83,6 @@ sections:
       </figure>
     {% endfor %}
     </div>
-  </div>
-</section>
-
-<section class="page-content section-noivas" id="noivas">
-  <div class="wrapper">
-    <h2 class="page-title">Especial Noivas</h2>
-  </div>
-
-  <div data-grid="center justify" class="noivas-gallery">
-    {% for pic in site.data.noivas %}
-      <div data-cell="shrink" class="slider-item"><img src="{{ pic }}" alt=""></div>
-    {% endfor %}
   </div>
 </section>
 
