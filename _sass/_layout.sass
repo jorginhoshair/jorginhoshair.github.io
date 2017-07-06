@@ -85,6 +85,22 @@
                 margin-left: auto
                 margin-right: auto
 
+.post
+    padding-top: $spacing-unit * 3
+
+.post-title
+    line-height: 1
+    +media-query($on-palm)
+        font-size: 40px
+        letter-spacing: -3px
+    +media-greater($on-palm)
+        letter-spacing: -5px
+
+.post-content
+
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, table
+        @extend .wrapper
+
 .section-home
     padding-top: $spacing-unit * 3
     background:
