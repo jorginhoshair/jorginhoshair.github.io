@@ -1,10 +1,12 @@
+{% assign facebook = site.data.empresa.facebook %}
+
 <footer class="site-footer">
 
   <div data-grid="center spacing" class="wrapper">
 
     <div data-cell="1of3" class="page-excerpt">
       <h2 class="page-title">{{ site.title }}</h2>
-      <p><a href="https://www.facebook.com/Jorjinhos-Hair-Style-326210300742861/" target="_blank">Fan page Jorginho's Hair Style</a></p>
+      <p><a href="{{ facebook.url }}" target="_blank">{{ facebook.label }}</a></p>
       <p>{{ site.description }}</p>
     </div>
     <form method="post" action="http://email.jorginhoshair.com.br/enviar_email.php" data-cell="1of3" class="page-excerpt" id="contato">
@@ -38,6 +40,3 @@
   </div>
 
 </footer>
-
-<script src="{{ '/js/scroll.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>
