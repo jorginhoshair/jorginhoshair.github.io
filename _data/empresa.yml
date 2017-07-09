@@ -1,0 +1,14 @@
+logo:
+  url: "Logo-Jorginho.png"
+  alt: "Logomarca Jorginho’s Hair"
+endereco: "Av. Caribe, 454 – Jd. América, Sorocaba – SP"
+telefones:
+  -
+    number: +551532112041
+    label: "(15) 3211-2041"
+  -
+    number: +551532346808
+    label: "(15) 3234-6808"
+facebook:
+  url: https://www.facebook.com/Jorjinhos-Hair-Style-326210300742861/
+  label: Fan page Jorginho's Hair Style
