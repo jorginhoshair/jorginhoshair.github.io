@@ -1,0 +1,17 @@
+---
+title: Home
+name: home
+class: page-content
+---
+
+{% assign empresa = site.data.empresa %}
+
+<div class="home-title">
+
+    <img src="{{ site.baseurl }}/img/{{ empresa.logo.url }}" alt="{{ empresa.logo.alt }}">
+
+    <p>{{ empresa.endereco }}</p>
+
+    <p>{% for tel in empresa.telefones %}<a href="{{ tel.number }}">{{ tel.label }}</a>{% if forloop.last == false %} / {% endif %}{% endfor %}</p>
+
+</div>

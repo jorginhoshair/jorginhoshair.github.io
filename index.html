@@ -1,102 +1,14 @@
 ---
 layout: default
-sections:
-  - title: Home
-    href : "#home"
-  - title: O Salão
-    href : "#salao"
-  - title: Noivas
-    href : "#noivas"
-  - title: Serviços
-    href : "#servicos"
-  - title: Profissionais
-    href : "#profissionais"
-  - title: Localização
-    href : "#localizacao"
+sections: true
 ---
 
-<section class="page-content section-home" id="home">
-  <div class="home-title">
-    <img src="{{ '/img/Logo-Jorginho.png' | prepend: site.baseurl }}" alt="Logomarca Jorginho’s Hair">
-    <p>Av. Caribe, 454 – Jd. América, Sorocaba – SP</p>
-    <p>(15) 3211-2041 / (15) 3234-6808</p>
-  </div>
-</section>
+{% for section in site.sections %}
 
-<section class="page-content section-salao" id="salao">
-  <div class="wrapper" data-grid="center spacing justify">
-    <div data-cell="1of2" class="page-excerpt">
-      <h2 class="page-title">O salão</h2>
-      <p>O salão nasceu de um sonho de um grande profissional, que atua na área há mais de 30 anos. Passando por outros salões da cidade, em 2002 deu um grande passo para construir um espaço diferenciado, onde clientes possam desfrutar de uma excelente equipe de profissionais e um aconchegante e elegante espaço, e os mesmos possam se sentir bem acolhidos.</p>
-      <p>O salão desfruta de uma infraestrutura preparada para as necessidades dos profissionais e no comodismo das clientes. Também oferece manobrista e estacionamento gratuito e seguro. Localizado em um bairro de alto padrão e de fácil acesso.</p>
-      <p>Além de seus serviços, o salão oferece às clientes boutique de roupas, acessórios, semijoias, perfumes, cosméticos e um aconchegante espaço gourmet.</p>
-      <p>Hoje o salão Jorginho`s hair style, é sinônimo de beleza e elegância no mercado.</p>
-    </div>
-    <div data-cell="shrink"><img src="https://c1.staticflickr.com/5/4185/34697289291_04b2c99f2a.jpg" alt="Noiva"></div>
-  </div>
-</section>
+  <section class="{{section.class}} section-{{ section.name }}" id="{{ section.name }}">
 
-<section class="page-content section-noivas" id="noivas">
-  <div class="wrapper">
-    <h2 class="page-title">Especial Noivas</h2>
-  </div>
+    {{ section }}
 
-  <div data-grid="center justify" class="noivas-gallery">
-    {% for pic in site.data.noivas %}
-      <div data-cell="shrink" class="slider-item"><img src="https://c1.staticflickr.com/{{ pic.farm }}/{{ pic.server }}/{{ pic.id }}_{{ pic.secret }}.jpg" alt="Noiva"></div>
-    {% endfor %}
-  </div>
-</section>
+  </section>
 
-<section class="section-servicos" id="servicos">
-  <div data-cell="2of3" class="page-excerpt">
-    <h2 class="page-title">Serviços</h2>
-
-    {% for serv in site.data.servicos %}
-      <article data-cell="1of2 shrink" class="servicos-item">
-        <div data-grid="row nowrap">
-          <div data-cell class="servicos-pic">
-            <img src="{{ site.baseurl }}/img/servicos/{{ serv.id }}.jpg" alt="{{ serv.title }}">
-          </div>
-          <div data-cell="2of3">
-            <h3 class="servicos-title">{{ serv.title }}</h3>
-            <p class="servicos-description">{{ serv.description }}</p>
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-
-  </div>
-</section>
-
-<section class="page-content section-profissionais" id="profissionais">
-  <div class="page-excerpt">
-    <h2 class="page-title">Nossos profissionais</h2>
-    <div data-grid="around wrap">
-    {% for person in site.data.people %}
-      <figure data-cell="1of4 stretch" class="wrapper pro-pic">
-        <div class="circ"><img src="{{ site.baseurl }}/img/people/{{ person.id }}.jpg" alt="foto de {{ person.name }}"></div>
-        <figcaption>
-          <p class="pro-name">{{ person.name }}</p>
-          <p class="pro-position">{{ person.position }}</p>
-        </figcaption>
-      </figure>
-    {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="page-content section-localizacao" id="localizacao">
-  <div class="wrapper" data-grid="center justify spacing">
-    <div class="page-excerpt" data-cell="1of3">
-      <h2 class="page-title">Localização</h2>
-      <p>Av. Caribe, 454 – Jd. América, Sorocaba – SP</p>
-      <p><strong>Telefones:</strong></p>
-      <p>(15) 3211-2041</p>
-      <p>(15) 3234-6808</p>
-    </div>
-    <div class="wrapper embed-container google-maps" data-cell="1of3 fill">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14633.090610360397!2d-47.467143!3d-23.522694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a8b1b0a8835%3A0xaef73b7e68d3fdaa!2sAv.+Caribe%2C+454+-+Jardim+America%2C+Sorocaba+-+SP%2C+Brasil!5e0!3m2!1spt-BR!2sbr!4v1473691967531" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
-</section>
+{% endfor %}

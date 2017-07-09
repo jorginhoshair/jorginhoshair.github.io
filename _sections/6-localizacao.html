@@ -1,0 +1,21 @@
+---
+title: Localização
+name: localizacao
+class: page-content
+---
+
+{% assign empresa = site.data.empresa %}
+
+<div class="wrapper" data-grid="center justify spacing">
+  <div class="page-excerpt" data-cell="1of3">
+    <h2 class="page-title">Localização</h2>
+    <p>{{ empresa.endereco }}</p>
+    <p><strong>Telefones:</strong></p>
+    {% for tel in empresa.telefones %}
+      <p><a href="{{ tel.number }}">{{ tel.label }}</a></p>
+    {% endfor %}
+  </div>
+  <div class="wrapper embed-container google-maps" data-cell="1of3 fill">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14633.090610360397!2d-47.467143!3d-23.522694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a8b1b0a8835%3A0xaef73b7e68d3fdaa!2sAv.+Caribe%2C+454+-+Jardim+America%2C+Sorocaba+-+SP%2C+Brasil!5e0!3m2!1spt-BR!2sbr!4v1473691967531" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</div>

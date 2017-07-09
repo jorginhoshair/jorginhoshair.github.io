@@ -25,7 +25,7 @@ $am-prefix: data
         @content
 
 =variant($valueName)
-    $result: split-braces(#{&})
+    $result: split-braces("#{&}")
     @at-root [#{$result}~="#{$valueName}"]
         @content
 

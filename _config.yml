@@ -20,3 +20,7 @@ sass:
 
 gems:
   - jekyll-coffeescript
+
+collections:
+  sections:
+    output: true

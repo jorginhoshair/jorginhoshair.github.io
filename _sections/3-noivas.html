@@ -1,0 +1,15 @@
+---
+title: Noivas
+name: noivas
+class: page-content
+---
+
+<div class="wrapper">
+  <h2 class="page-title">Especial Noivas</h2>
+</div>
+
+<div data-grid="center justify" class="noivas-gallery">
+  {% for pic in site.data.noivas %}
+    <div data-cell="shrink" class="slider-item"><img src="https://c1.staticflickr.com/{{ pic.farm }}/{{ pic.server }}/{{ pic.id }}_{{ pic.secret }}.jpg" alt="Noiva"></div>
+  {% endfor %}
+</div>

@@ -1,0 +1,24 @@
+---
+title: Serviços
+name: servicos
+class: ""
+---
+
+<div data-cell="2of3" class="page-excerpt">
+  <h2 class="page-title">Serviços</h2>
+
+  {% for serv in site.data.servicos %}
+    <article data-cell="1of2 shrink" class="servicos-item">
+      <div data-grid="row nowrap">
+        <div data-cell class="servicos-pic">
+          <img src="{{ site.baseurl }}/img/servicos/{{ serv.id }}.jpg" alt="{{ serv.title }}">
+        </div>
+        <div data-cell="2of3">
+          <h3 class="servicos-title">{{ serv.title }}</h3>
+          <p class="servicos-description">{{ serv.description }}</p>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+
+</div>
