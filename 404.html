@@ -1,0 +1,24 @@
+---
+layout: page
+title: 404 - Conteúdo não encontrado
+---
+
+<section class="page-excerpt">
+    <p>Desculpe! A página que você procura não está disponível, ou foi movida.</p>
+    <p><a href="{{ site.baseurl }}/">Vá para a página inicial</a> ou <a href="#contato">entre em contato</a>.</p>
+</section>
+
+<section class="page-content">
+    <div class="wrapper" data-grid="center row wrap">
+        {% for serv in site.data.servicos limit: 8 %}
+            <div data-cell="shrink">
+                <img src="{{ site.baseurl }}/img/servicos/{{ serv.id }}.jpg" alt="{{ serv.title }}">
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% assign local = site.sections | where: 'name', 'localizacao' %}
+<section class="page-content">
+    {{ local }}
+</section>
