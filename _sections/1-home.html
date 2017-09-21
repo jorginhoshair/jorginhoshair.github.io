@@ -14,4 +14,6 @@ class: page-content
 
     <p>{% for tel in empresa.telefones %}<a href="{{ tel.number }}">{{ tel.label }}</a>{% if forloop.last == false %} / {% endif %}{% endfor %}</p>
 
+    <p><a href="{{ empresa.whatsapp.number }}" data-btn><span class="colored-icon">{% include svg/whatsapp.svg %}</span> {{ empresa.whatsapp.label }}</a></p>
+
 </div>

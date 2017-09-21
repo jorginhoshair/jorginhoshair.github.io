@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6
 a
     color: desaturate($brand-color, 20%)
     text-decoration: none
+    transition: .3s ease-in-out
     &:hover
         color: $brand-color
 
@@ -97,12 +98,14 @@ pre
         display: table
         clear: both
 
-.icon
+.icon, .colored-icon
     > svg
         display: inline-block
         width: 16px
         height: 16px
         vertical-align: middle
+.icon
+    > svg
         color: inherit
         path, polygon
             fill: currentcolor
@@ -121,3 +124,16 @@ pre
         position: absolute
         width: 100%
         height: 100%
+
++module(btn)
+    padding: 5px 10px
+    border: 1px solid $brand-color
+    border-radius: 4px
+    white-space: nowrap
+    &:hover, &:focus, &:active
+        background: $brand-color
+        color: $grey-color-dark
+    
+    svg
+        vertical-align: text-bottom
+        height: 1.2em
