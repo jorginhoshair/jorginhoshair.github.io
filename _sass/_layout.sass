@@ -1,8 +1,6 @@
 %negativo
     background-color: $grey-color-dark
     color: #fff
-    a
-        color: $brand-color
 
 .site-header
     @extend %negativo
@@ -57,7 +55,7 @@
             width: 100%
             padding-bottom: 5px
             background-color: $background-color
-            box-shadow: (-3px) 3px 10px 0 $grey-color
+            box-shadow: -3px 3px 10px 0 rgba(black, .3)
         .page-link
             display: block
             padding: 15px
@@ -66,6 +64,9 @@
 .site-footer
     @extend %negativo
     padding: $spacing-unit 0
+    a
+        &:hover, &:focus, &:active
+            color: $reverse-color
 
 .page-content
     padding: $spacing-unit 0
@@ -116,6 +117,9 @@
         text-align: center
         background-color: rgba($grey-color-dark, 0.7)
         color: #fff
+        a
+            &:hover, &:focus, &:active
+                color: $reverse-color
 
 .section-salao
     background-color: $grey-color-light
