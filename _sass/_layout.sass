@@ -109,15 +109,18 @@
         repeat: no-repeat
         position: top
         size: cover
+    +media-query($on-laptop)
+        padding: $spacing-unit * 1.5 0 0
     .home-title
-        width: $on-laptop
-        max-width: 70%
-        margin: 150px auto
-        padding: 50px 0
+        max-width: $on-laptop
+        padding: $spacing-unit * 2
         text-align: center
         background-color: rgba($grey-color-dark, 0.7)
         color: #fff
+        +media-greater($on-laptop)
+            margin: 150px auto
         a
+            display: inline-block
             &:hover, &:focus, &:active
                 color: $reverse-color
 
