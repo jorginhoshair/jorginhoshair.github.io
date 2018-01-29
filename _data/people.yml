@@ -35,10 +35,6 @@
   name: Fábio Machado
   position: Cabelereiro, Maquiador, Colorista, Alisamentos
 -
-  id: gisele-cordeiro-auxiliar-de-cabeleireiros-hidratacoes
-  name: Gisele Cordeiro
-  position: Auxiliar de cabeleireiros, Hidratações
--
   id: gislaine-del-amo-auxiliar-de-cabeleireiros
   name: Gislaine Del Amo
   position: Auxiliar de cabeleireiros
@@ -102,10 +98,6 @@
   id: rosinha-hair-cabeleireira-colorista
   name: Rosinha Hair
   position: Cabeleireira, Colorista
--
-  id: sandro-ouros-designer-de-sobrancelhas-cabeleireiro
-  name: Sandro Ouros
-  position: Designer de Sobrancelhas, Cabeleireiro
 -
   id: silmara-maria-manicure-pedicure
   name: Silmara Maria
