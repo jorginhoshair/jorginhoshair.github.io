@@ -56,6 +56,12 @@
         +media-query($on-palm)
             > *
                 margin-bottom: $spacing-unit / 2
+            &[data-grid~="row"]
+                > :not(:last-child):not([data-cell~="order-1"])
+                    margin-right: $spacing-unit
+                > [data-cell~="order-1"]
+                    margin-left: $spacing-unit
+
 
     +variant(small-spacing)
         +media-greater($on-palm)
@@ -67,6 +73,12 @@
         +media-query($on-palm)
             > *
                 margin-bottom: $spacing-unit / 4
+            &[data-grid~="row"]
+                > :not(:last-child):not([data-cell~="order-1"])
+                    margin-right: $spacing-unit / 4
+                > [data-cell~="order-1"]
+                    margin-left: $spacing-unit / 4
+                    
 
     +module(cell)
         +variant(1of2)

@@ -7,8 +7,15 @@
 
     <div data-cell="1of3" class="page-excerpt">
       <h2 class="page-title">{{ site.title }}</h2>
-      <p><a href="{{ facebook.url }}" target="_blank">{{ facebook.label }}</a></p>
-      <p>{{ site.description }}</p>
+      <a href="{{ facebook.url }}" target="_blank" data-btn>
+        <span data-grid="row center spacing">
+          <span data-cell="1of3">
+            <img src="{{ site.baseurl }}{{ facebook.img }}" alt="{{ facebook.label }}">
+          </span>
+          <span>{{ facebook.label }}</span>
+        </span>
+      </a>
+      <p>{{ site.description | markdownify }}</p>
     </div>
     <form method="post" action="http://email.jorginhoshair.com.br/enviar_email.php" data-cell="1of3 fill" class="page-excerpt" id="contato">
       <div data-grid="center start row wrap spacing">

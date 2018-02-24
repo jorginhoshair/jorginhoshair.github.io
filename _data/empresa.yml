@@ -10,8 +10,9 @@ telefones:
     number: "+551532346808"
     label: "(15) 3234-6808"
 facebook:
-  url: https://www.facebook.com/Jorjinhos-Hair-Style-326210300742861/
-  label: Fan page Jorginho's Hair Style
+  url: https://www.facebook.com/jorjinhoshairstyle/
+  img: /img/facebook.jpg
+  label: Siga o salão Jorginho's Hair no Facebook
 whatsapp:
   number: "+5515981367777"
   label: "(15) 9 8136-7777"
