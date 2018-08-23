@@ -3,14 +3,6 @@
   name: Anderson
   position: Cabeleireiro, Colorista, Alisamentos
 -
-  id: bete-freitas-manicure-e-pedicure
-  name: Bete Freitas
-  position: Manicure e Pedicure
--
-  id: carine-depiladora-desing-de-sobrancelhas-e-depilacao-a-fio
-  name: Carine
-  position: Depiladora, Design de Sobrancelhas e Depilação a Fio
--
   id: dudu-alves-cabelereiro-colorista-progressivas
   name: Dudu Alves
   position: Cabeleireiro, Colorista, Alisamentos
@@ -50,22 +42,6 @@
   id: josi-lucio-manicure-pedicure-podologa
   name: Josi Lucio
   position: Manicure, Pedicure, Podóloga
--
-  id: leticia-ilber-manicure-pedicure
-  name: Leticia Ilber
-  position: Manicure, Pedicure
--
-  id: maicon-santos-cabeleireiro-maquiador-e-micropigmentador
-  name: Maicon Santos
-  position: Cabelereireiro, Maquiador, Micropigmentador
--
-  id: marcia-martins-auxiliar-de-cabeleireiros
-  name: Marcia Martins
-  position: Auxiliar de Cabeleireiros
--
-  id: marcia-miranda-auxiliar-de-cabeleireiros
-  name: Marcia Miranda
-  position: Auxiliar de Cabeleirerios
 -
   id: michel-douglas-designer-de-sobrancelhas-cabeleireiro-masculino
   name: Michel Douglas
@@ -118,7 +94,3 @@
   id: yolanda-lopes-depiladora
   name: Yolanda Lopes
   position: Depiladora
--
-  id: mateus-auxiliar
-  name: Mateus
-  position: Auxiliar de cabeleireiros
